@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root{
+  --Strongcyan: hsl(172, 67%, 45%);
+  --Verydarkcyan: hsl(183, 100%, 15%);
+--Darkgrayishcyan: hsl(186, 14%, 43%);
+--Grayishcyan: hsl(184, 14%, 56%)
+--Lightgrayishcyan:hsl(185, 41%,84%) ;
+--Verylightgrayishcyan: hsl(189, 41%, 97%);
+--White: hsl(0, 0%, 100%);
+}
+
+*,::before,::after{
+  margin:0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html{
+  box-sizing: border-box;
+}
+body{
+  
+  background-color:hsl(185, 41%, 84%);
+}
+
+/*.split{
+  margin-top:40px;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing:7px;
+  font-weight:600;
+  font-size: 24px;
+  color:hsl(183, 100%, 15%);
+}*/
+.logo{
+  margin-top:40px;
+  margin-bottom: 40px;
+  display:flex;
+  justify-content: center;
+}
+.container{
+  font-family: 'Space Mono', Sans-Serif;
+  background-color:hsl(0, 0%, 100%) ;
+  border-radius:20px ;
+  padding:1.5rem;
+}
+.dollar-container{
+  position: relative;
+  display: inline-block;
+  margin-bottom:25px;
+  margin-top:5px;
+}
+.dollar-sign{
+  position: absolute;
+  left:10px;
+  top:20%;
+}
+.error-2{
+  color:red;
+  font-size: 13px;
+}
+.bill-input{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Space Mono', Sans-Serif;
+  height:2.3rem;
+  width:100%; 
+  padding:15px;
+  background-color: hsl(189, 41%, 97%);
+  border:none;
+  border-radius:10px;
+  text-align:right;
+  color:var(--Verydarkcyan);
+  outline-color:var(--Grayishcyan); 
+}
+.bill-input::placeholder{
+  font-family: 'Space Mono',Sans-Serif;
+  color:var(--Darkgrayishcyan);
+}
+.num-people::placeholder{
+  font-family: 'Space Mono',Sans-Serif;
+  color:var(--Darkgrayishcyan);
+}
+.texts{
+  font-size:14px;
+  font-weight:600;
+  color:hsl(186, 14%, 43%);
+}
+.text-2{
+  font-weight:600;
+  margin-bottom: 0;
+  color:#FFF;
+  font-size:14px;
+}
+.tips-container{
+  margin-top:15px;
+  margin-bottom: 40px;
+  display:grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:15px;
+}
+.tip{
+  padding:10px;
+  text-align: center;
+  background-color:hsl(183, 100%, 15%) ;
+  color:#FFF;
+  font-weight:600;
+  border-radius:5px;
+  background-color:hsl(183, 100%, 15%);
+}
+.tip:hover,.tip selected{
+ background-color:var(--Strongcyan);
+}
+
+.tip-1{
+  background-color: var(--Strongcyan);
+  color:hsl(183, 100%, 15%);
+}
+.custom{
+  text-align:center;
+  border:none;
+  width:150px;
+  font-size:17px;
+  font-weight: 600;
+  color:hsl(183, 100%, 15%);
+  background-color: #FFF;
+  outline-color:var(--Grayishcyan); 
+}
+
+.peoples-container{
+  position: relative;
+  display: inline-block;
+  margin-bottom:25px;
+  margin-top:5px;
+}
+.person-img{
+  position: absolute;
+  left:10px;
+  top:20%;
+}
+.error-container{
+  display:flex;
+  justify-content: space-between;
+}
+.error{
+  font-size: 13px;
+  color:red;
+}
+.hidden{
+  display:none;
+}
+.num-people{
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Space Mono', Sans-Serif;
+  height:2.3rem;
+  width:100%; 
+  padding:15px;
+  background-color: hsl(189, 41%, 97%);
+  border:none;
+  border-radius:10px;
+  text-align:right;
+  outline-color:var(--Grayishcyan);
+}
+
+.tip-total-amount{
+  padding:25px 15px;
+  border-radius:20px;
+  color:#FFF;
+  background-color:hsl(183, 100%, 15%) ;
+}
+.result{
+  display:flex;
+  justify-content:space-between;
+ /* align-items: center;*/
+}
+
+.person{
+  color:hsl(186, 14%, 43%);
+  font-size: 12px;
+}
+.inner-result{
+  margin-bottom:20px ;
+}
+.inner-result p{
+  margin-0;
+  padding:0;
+}
+.num{
+  font-weight:600;
+  font-size: 24px;
+  color:var(--Strongcyan);
+}
+.btn{
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600;
+ /* background-color:var(--Verydarkcyan);*/
+  color:hsl(183, 100%, 15%);
+  text-align: center;
+
+}
+.btn-container{
+background-color: hsl(183, 100%, 20%);
+
+padding:10px;
+border-radius:5px;
+}
+.btn-container-color{
+  background-color: var(--Strongcyan);
+  
+}
+.btn-color{
+  color:var(--Verydarkcyan);
+  
+}
+@media screen and (min-width:769px){
+  .container{
+    width:800px;
+    padding:2rem;
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+  }
+  .bill-input{
+   width:100%;
+  }
+  .tips-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    
+  }
+  .custom{
+    width:100px;
+  }
+  .bill-tip-input{
+    width:45%;
+  }
+  .tip-total-amount{
+    padding:2.5rem 3rem;
+    width:50%;
+  }
+  .inner-result{
+    margin-bottom:30px;
+  }
+
+  .btn-container{
+    margin-top:120px;
+  }
+  .num-people{
+    width:100%;
+  }
+}

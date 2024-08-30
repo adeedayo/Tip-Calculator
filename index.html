@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+    <title>Tip Calculator</title>
+    
+  </head>
+  <body>
+    <!--<p class="split">SPLI <br>TTER</br></p>-->
+    <div class="logo">    <img src="img/logo.svg" ></div>
+
+    <div class="container">
+      <div class="bill-tip-input ">
+        <div class="error-container">
+    <p class="texts">Bill</p>
+    <p class=" error-2 hidden">Can't be zero</p>
+    </div>
+    <div class="dollar-container">
+          <img src="img/icon-dollar.svg" class="dollar-sign">
+          <input class="bill-input inputs" type="number" placeholder="0"></input>
+    </div >
+    <p class="texts">Select Tip %</p>
+      <div class="tips-container">
+            <p class="tip">5%</p>
+            <p class="tip">10%</p>
+            <p class="tip">15%</p>
+            <p class="tip">25%</p>
+            <p class="tip">50%</p>
+            <input class="custom" placeholder="Custom"></input>
+    </div>
+        <div class="error-container">
+        <p class="texts">Number of People</p>
+        <p class="error hidden">Can't be zero</p>
+        </div>
+    <div class="peoples-container">
+      <img src="img/icon-person.svg"class="person-img">
+      <input class="num-people inputs" placeholder="0" type="number">
+    </div>
+    </div>
+    <!--end of bill-tip-input-->
+    <div class="tip-total-amount">
+      <div class="result ">
+        <div class="inner-result">
+      <p class="text-2">Tip Amount</p>
+      <p class="person">/ Person</p>
+      </div>
+      <p class="num">$0.00</p>
+      </div>
+      
+            <div class="result">
+              <div class="inner-result">
+      <p class="text-2">Total  </p>
+      <p class="person">/ Person</p>
+      </div>
+      <p class="num">$0.00</p>
+      </div>
+      <div class="btn-container ">
+          <p class="btn">RESET</p>
+      </div>
+
+    </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
